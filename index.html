@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+</head>
+<body>
+  <style>
+    body{
+      padding:0;
+      margin:0;
+      display:grid;
+      grid:1fr 9fr/7fr 3fr
+    }
+    header{
+      text-align:center;
+      width:100%;
+      background-color:#1fffff;
+      font-size:2rem;
+      font-family:helvetica;
+      font-weight:700;
+      grid-column:span 2;
+    }
+    table{
+      width:100%;
+      border:1px solid black;
+      background-color:#dddddd;
+    }
+    aside{
+  
+    }
+    label{
+      display:block;
+    }
+    input{
+      display:block
+    }
+    label[for='leido']{
+      display: inline
+    }
+   
+  </style>
+  <header>
+    <div>Welcome to my library</div>
+    </header>
+  <main>
+      <table id='Tabla'>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+  </main>
+  <aside>
+    <form action="">
+      <legend>Agregar un libro</legend>
+      <label for="titulo">Titulo:</label>
+      <input type="text" id='titulo' name="titulo">
+      <label for="autor">Autor:</label>
+      <input type="text" id='autor' name="autor">
+      <label for="paginas">Numero de paginas:</label>
+      <input type="number" id='paginas' name="paginas">
+      <label for="leido">Lo leiste?</label>
+      <input type="checkbox" id='leido' name="leido">
+      <button>Agregar Libro</button>
+    </form>
+  </aside>
+</body>
+</html>
