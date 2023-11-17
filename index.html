@@ -7,41 +7,7 @@
   <title>Library</title>
 </head>
 <body>
-  <style>
-    body{
-      padding:0;
-      margin:0;
-      display:grid;
-      grid:1fr 9fr/7fr 3fr
-    }
-    header{
-      text-align:center;
-      width:100%;
-      background-color:#1fffff;
-      font-size:2rem;
-      font-family:helvetica;
-      font-weight:700;
-      grid-column:span 2;
-    }
-    table{
-      width:100%;
-      border:1px solid black;
-      background-color:#dddddd;
-    }
-    aside{
   
-    }
-    label{
-      display:block;
-    }
-    input{
-      display:block
-    }
-    label[for='leido']{
-      display: inline
-    }
-   
-  </style>
   <header>
     <div>Welcome to my library</div>
     </header>
@@ -58,17 +24,17 @@
       </table>
   </main>
   <aside>
-    <form action="">
+    <form action="" id='formulario'>
       <legend>Agregar un libro</legend>
       <label for="titulo">Titulo:</label>
-      <input type="text" id='titulo' name="titulo">
+      <input type="text" id='titulo' name="titulo" required>
       <label for="autor">Autor:</label>
-      <input type="text" id='autor' name="autor">
+      <input type="text" id='autor' name="autor" required>
       <label for="paginas">Numero de paginas:</label>
-      <input type="number" id='paginas' name="paginas">
+      <input type="number" id='paginas' name="paginas" required>
       <label for="leido">Lo leiste?</label>
-      <input type="checkbox" id='leido' name="leido">
-      <button>Agregar Libro</button>
+      <input type="checkbox" id='leido' name="leido" required>
+      <button type="submit" id="boton">Agregar Libro</button>
     </form>
   </aside>
 </body>
